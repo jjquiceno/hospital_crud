@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Record</title>
+    {% load static %}
+    <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}"> -->
+    <link rel="stylesheet" href="..\static\css\table.css">
+    <link rel="stylesheet" href="..\static\css\style.css">
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Placa</th>
+                <th>Modelo</th>
+                <th>Costo</th>
+                <th>contacto</th>
+                <th>distribuidor</th>
+                <th>editar</th>
+                <th>borrar</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for employee in employees %}
+            <tr>
+                <td>{{ employee.eid }}</td>
+                <td>{{employee.ename}}</td>
+                <td>{{employee.eemail}}</td>
+                <td>{{employee.econtact}}</td>
+                <td>{{employee.edistri}}</td>
+                <td>
+                    <a class="edit" href="/edit/{{ employee.id }}">Edit</a>
+                </td>
+                <td><a class="delete" href="/delete/{{employee.id}}">Delete</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <br>
+
+    <div class="boton">
+     <button ><a href="/emp">agregar un nuevo coche</a></button>
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    background-color: grey;
+}
+
+table{
+    margin: 50px auto;
+    border-collapse: collapse;
+    background-color: #eeeeee95;
+    width: 70%; 
+    border-bottom: 0.5px solid black;
+}
+td, th{
+    padding: 3px;
+    border-left: 0.5px solid black;
+}
+th{
+    border: 0.5px solid black;
+}
+td{
+    border-right: 0.5px solid black;
+    text-align: center;
+}
+td:hover{
+    background-color: bisque;
+
+}
+
+.edit{
+    color: rgb(91, 91, 154);
+}
+
+.edit, .delete{
+    text-decoration: none;
+}
+.delete{
+    color: rgb(180, 72, 72);
+}
+
+

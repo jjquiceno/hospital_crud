@@ -20,6 +20,7 @@ class Migration(migrations.Migration):
                 ('eemail', models.CharField(max_length=254)),
                 ('econtact', models.CharField(max_length=250)),
                 ('edistri', models.CharField(max_length=250)),
+                ('ecolor', models.CharField(max_length=250))
             ],
             options={
                 'db_table': 'employee',

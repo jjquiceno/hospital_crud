@@ -5,6 +5,8 @@ class Employee(models.Model):
     eemail = models.CharField(max_length=250)  
     econtact = models.CharField(max_length=250) 
     edistri = models.CharField(max_length=250)
+    ecolor = models.CharField(max_length=250)
+
 
     def __str__(self):
         return "%s " %(self.ename) 

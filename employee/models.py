@@ -7,7 +7,6 @@ class Employee(models.Model):
     edistri = models.CharField(max_length=250)
     ecolor = models.CharField(max_length=250)
 
-
     def __str__(self):
         return "%s " %(self.ename) 
     class Meta:  

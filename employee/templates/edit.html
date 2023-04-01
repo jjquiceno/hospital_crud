@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <img src = "{% static '/R.jpg' %}" height="200" width="200" class="d-inline-block align-top">
     <form method="POST" action="/update/{{employee.id}}">
         {% csrf_token %}
         <div>

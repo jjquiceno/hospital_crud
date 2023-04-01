@@ -20,9 +20,9 @@ form{
     justify-content: center;
 }
 body{
-    background-image: url("AUDI.jpg");
+    /* background-image: url("audi.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     height: 90vh;
     display: flex;
     flex-direction: column;

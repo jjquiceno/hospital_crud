@@ -17,12 +17,13 @@
     <table>
         <thead>
             <tr>
-                <th>Placa</th>
+                <th>id</th>
                 <th>Nombre Paciente</th>
-                <th>fechahora</th>
+                
                 <th>contacto medico</th>
                 <th>distribuidor</th>
                 <th>color</th>
+                <th>fechahora</th>
                 <th>editar</th>
                 <th>borrar</th>
             </tr>
@@ -30,12 +31,12 @@
         <tbody>
             {% for employee in employees %}
             <tr>
-                <td>{{ employee.eid }}</td>
+                <td>{{ employee.id }}</td>
                 <td>{{employee.epaciente}}</td>
-                <td>{{employee.efechahora}}</td>
                 <td>{{employee.emedico}}</td>
                 <td>{{employee.edistri}}</td>
                 <td>{{employee.ecolor}}</td>
+                <td>{{employee.efechahora}}</td>
 
                 <td>
                     <a class="edit" href="/edit/{{ employee.id }}">Edit</a>

@@ -2,7 +2,7 @@ from django.db import models
 class Employee(models.Model):  
     eid = models.CharField(max_length=25)  
     epaciente = models.CharField(max_length=250)  
-    eemail = models.CharField(max_length=250)  
+    efechahora = models.CharField(max_length=250)  
     emedico = models.CharField(max_length=250) 
     edistri = models.CharField(max_length=250)
     ecolor = models.CharField(max_length=250)

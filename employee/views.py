@@ -18,6 +18,9 @@ def emp(request):
 def show(request):  
     employees = Employee.objects.all()  
     return render(request,"show.html",{'employees':employees})  
+def menu(request):  
+    employees = Employee.objects.all()  
+    return render(request,"menu.html",{'employees':employees}) 
 def edit(request, id):  
     employee = Employee.objects.get(id=id)  
     return render(request,'edit.html', {'employee':employee})  

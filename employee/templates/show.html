@@ -18,9 +18,9 @@
         <thead>
             <tr>
                 <th>Placa</th>
-                <th>Modelo</th>
+                <th>Nombre Paciente</th>
                 <th>Costo</th>
-                <th>contacto</th>
+                <th>contacto medico</th>
                 <th>distribuidor</th>
                 <th>color</th>
                 <th>editar</th>
@@ -31,9 +31,9 @@
             {% for employee in employees %}
             <tr>
                 <td>{{ employee.eid }}</td>
-                <td>{{employee.ename}}</td>
+                <td>{{employee.epaciente}}</td>
                 <td>{{employee.eemail}}</td>
-                <td>{{employee.econtact}}</td>
+                <td>{{employee.emedico}}</td>
                 <td>{{employee.edistri}}</td>
                 <td>{{employee.ecolor}}</td>
 

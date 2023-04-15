@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="..\static\css\style.css">
+    <link rel="stylesheet" href="..\static\css\form.css">
+</head>
+
+<body>
+    <img src = "{% static '/R.jpg' %}" height="200" width="200" class="d-inline-block align-top">
+    <form method="POST" action="/emp">
+        {% csrf_token %}
+        <h2>CENTRO MEDICO</h2>
+        <H3>QUICENO LONDOÑO</H3>
+        <BR></BR>
+        <H3>Agenda tu sita:</H3>
+        <div>
+            <br>
+            <div class="formulario">
+                <!-- <div class="items">
+                    <p>id:</p>{{ form.eid }}
+                </div> -->
+                <div class="items">
+                    <p>Nombre Paciente:</p>{{ form.epaciente }}
+                </div>
+                <div class="items">
+                    <p>Fecha hora:</p>{{ form.efechahora }}
+                </div>
+                <div class="items">
+                    <p>medico:</p>{{ form.emedico }}
+                </div>
+                <div class="items">
+                    <p>diagnostico:</p>{{ form.edistri }}
+                </div>
+                <div class="items">
+                    <p>costo:</p>{{ form.ecolor }}
+                </div>
+                <div class="items">
+                    <br>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

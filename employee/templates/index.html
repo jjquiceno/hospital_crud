@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <img src = "{% static '/R.jpg' %}" height="200" width="200" class="d-inline-block align-top">
+    <!-- <img src = "{% static '/R.jpg' %}" height="200" width="200" class="d-inline-block align-top"> -->
     <form method="POST" action="/emp">
         {% csrf_token %}
         <h2>CENTRO MEDICO</h2>
@@ -22,9 +22,9 @@
         <div>
             <br>
             <div class="formulario">
-                <!-- <div class="items">
+                <div class="items">
                     <p>id:</p>{{ form.eid }}
-                </div> -->
+                </div>
                 <div class="items">
                     <p>Nombre Paciente:</p>{{ form.epaciente }}
                 </div>

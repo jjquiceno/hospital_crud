@@ -1,5 +1,6 @@
 body {
     height: 100%;
+    padding: 10px 0;
 }
 
 table,
@@ -36,3 +37,7 @@ button a{
     width: fit-content;
     margin: auto;
 }
+h3{
+    text-align: center;
+}
+

@@ -19,7 +19,8 @@ class Migration(migrations.Migration):
                 ('efechahora', models.DateTimeField()),
                 ('emedico', models.CharField(max_length=250)),
                 ('edistri', models.CharField(max_length=250)),
-                ('ecolor', models.CharField(max_length=250))
+                ('ecolor', models.CharField(max_length=250)),
+                ('eid', models.CharField(max_length=50))
             ],
             options={
                 'db_table': 'citas',

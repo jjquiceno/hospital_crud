@@ -5,7 +5,9 @@
     font-family: cursive;
 }
 body{
-    background-color: grey;
+    background-image: url(../HOSPITAL.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 table{
@@ -40,6 +42,9 @@ td:hover{
 }
 .delete{
     color: rgb(180, 72, 72);
+}
+.boton{
+    text-align: center;
 }
 
 
